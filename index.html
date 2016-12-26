@@ -1,39 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-<head>
-    <style type="text/css">
-      button,
-      div,
-      form,
-      input {
-        margin: 10px;
-      }
-
+  <head>
+    <meta charset="utf-8">
     </style>
-	<title id="title">API Magic</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+      <title id="title">API Magic</title>
     <meta charset="utf-8">
     <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="">
-</head>
-<body>
-<div ID=header>
-<H1>API Magic!</H1>
-<h2>Click on an animal to see ten GIPs.  Click on the giphy to animate. Another click on the image and it will stop.</h2>
-</div>
-<div id=topics></div>
-<div id=addTopic>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" type="text/javascript" href="javascript.js">
+  </head>
+  <body>
 
-    <form id="topicForm">
-        <label for="topicInput">Add Another Animal!</label>
-        <input type="text" id="topicInput"><br>
+    <div class="container">
+      <h1>API Magic</h1>
+
+      <div id="buttons-view"></div>
+
+      <form id="topic-form">
+        <label for="topic-input">Add Another Animal</label>
+        <input type="text" id="topic-input"><br>
 
         <!-- Button triggers new movie to be added -->
-        <input id="addTopic" type="submit" value="Add Another Animal!">
+        <input id="add-topic" type="submit" value="Add Another Animal">
       </form>
-</div>
-<div id=results></div>
+
       <script src="javascript.js"></script>
-</body>
-</html>
+      </div>
+      </body>
+
+      </div>
