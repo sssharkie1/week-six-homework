@@ -1,12 +1,10 @@
-
-
-	var topics = ["elephant","crow", "guinea hen", "sloth","wombat","dog"];
-
+	var topics = ["tractor","barn","horse","goat","cow", "farmer"];
+//["elephant","crow", "guinea hen", "sloth","wombat","dog"]
 
 	function renderButtons() {
 
 	for (var i = 0; i < topics.length; i++) {
-      $("#buttons-view").append("<button class='topicClass' id='button' data-name = '" + topics[i]
+      $("#buttons-view").append("<button class='topicClass' id='button' data-name = " + topics[i]
       + "'>" + topics[i] + "</button>");
       }
   };          
@@ -28,9 +26,8 @@
 
 
         var topic = $(this).data("name");
-      	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
-        topic + "&api_key=dc6zaTOxFJmzC&limit=10"; //change to ten when done
-console.log(topic);
+      	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+        topic + "&api_key=dc6zaTOxFJmzC&limit=10"; 
         $.ajax({
           url: queryURL,
           method: "GET",
@@ -46,8 +43,6 @@ console.log(topic);
             var topicImage = $("<img>");
 
             topicImage.attr("src", results[i].images.fixed_height_still.url);
-
-            //added these
             topicImage.attr("data-still", results[i].images.fixed_height_still.url);
             topicImage.attr("data-animate", results[i].images.fixed_height.url);
             topicImage.attr("data-state", "still");

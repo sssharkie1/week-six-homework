@@ -3,6 +3,7 @@
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 48px;
 }
+	
 .container{
 	text-align: center;
 	font-weight: bolder;
@@ -14,19 +15,15 @@
 	font-size: 24px;
 	margin:10px;
 	font-family: 'Josefin Sans', sans-serif;
+	background: #9b1c0d;
+	color: white;
 }
 
 #add-topic{
 	font-size: 24px;
-		color: red;
-		font-family: 'Josefin Sans', sans-serif;
-}
-
-#presetButtons{
-	font-size: 30px;
-	margin: 20px;
-	color: red;
+	color: #9b1c0d;
 	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
 }
 
 #topic-input{
@@ -38,5 +35,15 @@
 #gifs-appear-here {
 	clear: both;
 	margin-top: 30px;
-
 }
+
+#back-to-top {
+color: #9b1c0d;
+margin-top: 150px;
+font-size: 18px;
+}
+/*.item{
+	float: left;
+	overflow:auto;
+	margin: 50px;
+	}*/
